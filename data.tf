@@ -2,27 +2,27 @@
 
 data "aws_ssoadmin_permission_set" "COPS-PS" {
   instance_arn = tolist(data.aws_ssoadmin_instances.sso.arns)[0]
-  name         = var.COPS
+  arn = var.COPS
 }
 
 data "aws_ssoadmin_permission_set" "DBA-PS" {
   instance_arn = tolist(data.aws_ssoadmin_instances.sso.arns)[0]
-  name         = var.DBA
+  arn = var.DBA
 }
 
 data "aws_ssoadmin_permission_set" "NSP-PS" {
   instance_arn = tolist(data.aws_ssoadmin_instances.sso.arns)[0]
-  name         = var.NSP
+  arn = var.NSP
 }
 
 data "aws_ssoadmin_permission_set" "InfraRead-PS" {
   instance_arn = tolist(data.aws_ssoadmin_instances.sso.arns)[0]
-  name         = var.InfraRead
+  arn = var.InfraRead
 }
 
 data "aws_ssoadmin_permission_set" "SEC-PS" {
   instance_arn = tolist(data.aws_ssoadmin_instances.sso.arns)[0]
-  name         = var.SEC
+  arn = var.SEC
 }
 
 
