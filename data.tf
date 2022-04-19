@@ -25,6 +25,23 @@ data "aws_ssoadmin_permission_set" "SEC-PS" {
   arn = var.SEC
 }
 
+# Inline Policy if required
+/*
+data "aws_iam_policy_document" "example" {
+  statement {
+    sid = "1"
+
+    actions = [
+      "s3:ListAllMyBuckets",
+      "s3:GetBucketLocation",
+    ]
+
+    resources = [
+      "arn:aws:s3:::*",
+    ]
+  }
+}
+*/
 
 # ADGroup details to map with permission sets
 
